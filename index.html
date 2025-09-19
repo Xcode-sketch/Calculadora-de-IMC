@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="author" content="Eduardo Barbosa Silva">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <label for="altura" style="grid-area: label1;">Digite sua altura em centimetros(cm)</label>
+        <label for="peso" style="grid-area: label2;">Digite seu peso atual em Quilo Gramas</label>
+        <input type="number" name="altura" required class="input altura" style="grid-area: input01;">
+        <input type="number" name="peso" required class="input peso" style="grid-area: input02;">
+        <button class="calcularBtn" style="grid-area: btn;">Calcular</button>
+        <div class="resultado" style="grid-area: resultado;"></div>
+        <div class="erro" style="grid-area: erro;"></div>
+    </div>
+
+    <script src="ts/script.js"></script>
+</body>
+
+</html>
