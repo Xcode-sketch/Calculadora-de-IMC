@@ -9,6 +9,7 @@ calcular.addEventListener('click', () => {
     const alturaCM = altura / 100;
     const peso = Number(pesoInput.value);
     const IMC = peso / (alturaCM ** 2);
+    const imcFormatado = Number(IMC.toFixed(2));
     const p = document.createElement(`p`);
     const p2 = document.createElement(`p`);
     erro.innerHTML = ``;
@@ -20,28 +21,28 @@ calcular.addEventListener('click', () => {
         return;
     }
     if (IMC < 18.5) {
-        p.innerHTML = `${IMC}`;
+        p.innerHTML = `${imcFormatado}`;
         resultado.appendChild(p);
         p2.innerHTML = "Magreza";
         p2.style.color = "#0055FF";
         resultado.appendChild(p2);
     }
     else if (IMC < 25) {
-        p.innerHTML = `${IMC}`;
+        p.innerHTML = `${imcFormatado}`;
         resultado.appendChild(p);
         p2.innerHTML = "Peso normal";
         p2.style.color = "#1cf13fff";
         resultado.appendChild(p2);
     }
     else if (IMC < 30) {
-        p.innerHTML = `${IMC}`;
+        p.innerHTML = `${imcFormatado}`;
         resultado.appendChild(p);
         p2.innerHTML = "Sobrepeso";
         p2.style.color = "#f6ff00ff";
         resultado.appendChild(p2);
     }
     else if (IMC > 30) {
-        p.innerHTML = `${IMC}`;
+        p.innerHTML = `${imcFormatado}`;
         resultado.appendChild(p);
         p2.innerHTML = "Obesidade";
         p2.style.color = "#ffd000ff";
