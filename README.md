@@ -3,12 +3,12 @@
 
 Uma calculadora de IMC que conssegue exiber sua classificação atual, desde a magreza, até a obesidade.
 
-Esse projeto faz parte da minha trilha de aperndizagem onde vou desenvolvendo as habilidades de programação e raciocinio lógico
+Esse projeto faz parte da minha trilha de aprendizagem onde vou desenvolvendo as habilidades de programação e raciocinio lógico
 
 
 ## Aprendizados 📕
 
-Foi possivel me aperfeisoar nas Tecnologias:
+Foi possivel me aperfeiçoar nas Tecnologias:
 - HTML
 - CSS
 - JavaScript
